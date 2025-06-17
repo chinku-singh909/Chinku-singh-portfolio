@@ -6,9 +6,9 @@ This project showcases who I am, my skills, education, hobbies, and how you can 
 ---
 
 ##📸screenshots
+
 ![Screenshot (13)](https://github.com/user-attachments/assets/50d4ee24-1d1d-4e7d-8978-287ad8ad302e)
-![Screenshot (13)](https://github.com/user-attachments/assets/50d4ee24-1d1d-4e7d-8978-287ad8ad302e)
-![Screenshot (14)](https://github.com/user-attachments/assets/b3834bf6-ccdc-4574-bedd-7755b5f89fd1)
+
 ![Screenshot (14)](https://github.com/user-attachments/assets/b3834bf6-ccdc-4574-bedd-7755b5f89fd1)
 
 
