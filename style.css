@@ -1,0 +1,153 @@
+General Reset and Base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #00f7ff;
+  background: linear-gradient(135deg, #0a0f1a, #000000);
+  background-size: cover;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #000000, #111827);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.intro .text {
+  flex: 1;
+}
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.intro p {
+  font-size: 1.4rem;
+}
+.scroll-down {
+  margin-top: 1.5rem;
+  display: inline-block;
+ text-align: center;
+  animation: bounce 2s infinite;
+  color: #0ff;
+  font-weight: bold;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.profile-pic {
+  flex: 1;
+  text-align: center;
+}
+.profile-pic img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #00f7ff;
+  box-shadow: 0 0 30px #00f7ff;
+  object-fit: cover;
+}
+
+/* Section Styling */
+main {
+  padding: 4rem 2rem;
+  background: #0a0f1a;
+}
+section {
+  margin-bottom: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #00f7ff;
+  padding-left: 1rem;
+}
+ul {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #00f7ff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 10px 0 0;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #0ff;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+.contact-links {
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #222;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
