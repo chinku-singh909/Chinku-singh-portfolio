@@ -1,11 +1,15 @@
-General Reset and Base
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+/* General Reset and Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #00f7ff;
   background: linear-gradient(135deg, #0a0f1a, #000000);
   background-size: cover;
@@ -15,36 +19,47 @@ body {
 
 /* Navigation */
 nav {
-  background: rgba(0, 0, 0, 0.7);
+  position: fixed; /* stick to top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
   padding: 1rem 0;
   text-align: center;
+  z-index: 1000; /* stay above other content */
+  backdrop-filter: blur(10px); /* subtle blur effect */
 }
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
+
 nav a {
   color: #00f7ff;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
+
 nav a:hover {
   text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
 }
 
 /* Hero Section */
 .hero {
-  padding: 4rem 2rem;
+  padding: 9rem 2rem 4rem; /* top padding increased for fixed nav */
   min-height: 100vh;
   background: linear-gradient(145deg, #000000, #111827);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .intro {
   display: flex;
   flex-direction: row;
@@ -53,32 +68,41 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
 .intro .text {
   flex: 1;
 }
+
 .intro h1 {
-  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
+
 .intro p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1.8;
 }
+
 .scroll-down {
   margin-top: 1.5rem;
   display: inline-block;
- text-align: center;
+  text-align: center;
   animation: bounce 2s infinite;
   color: #0ff;
   font-weight: bold;
 }
+
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+
 .profile-pic {
   flex: 1;
   text-align: center;
 }
+
 .profile-pic img {
   width: 250px;
   height: 250px;
@@ -93,19 +117,24 @@ main {
   padding: 4rem 2rem;
   background: #0a0f1a;
 }
+
 section {
   margin-bottom: 4rem;
 }
+
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
   border-left: 5px solid #00f7ff;
   padding-left: 1rem;
+  font-family: 'Pacifico', cursive;
 }
+
 ul {
   padding-left: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
+
 li {
   margin-bottom: 0.5rem;
 }
@@ -115,13 +144,15 @@ li {
   display: inline-block;
   background: #00f7ff;
   color: #000;
-  font-weight: bold;
-  padding: 10px 20px;
+  font-weight: 700;
+  padding: 12px 24px;
   margin: 10px 10px 0 0;
   border-radius: 30px;
   text-decoration: none;
+  font-size: 1.1rem;
   transition: 0.3s ease-in-out;
 }
+
 .btn:hover {
   background: #0ff;
   color: #000;
@@ -148,6 +179,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
 }
